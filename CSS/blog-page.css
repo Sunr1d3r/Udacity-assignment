@@ -1,0 +1,376 @@
+/* blog page CSS */
+
+@import url(https://fonts.googleapis.com/css2?family=Belleza&family=Raleway&display=swap);
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+img,
+form,
+fieldset,
+header,
+footer,
+.footie,
+p,
+blockquote {
+  margin: 0;
+  padding: 0;
+  /* resetting margins through the entire doc's elements to avoid default-set ones */
+}
+
+html {
+  font-family: 'Raleway', sans-serif;
+
+}
+
+body {
+  font-size: 1.2em;
+}
+
+a:link {
+  color: #ffd0a8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: aquamarine;
+
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 3em minmax(250px, 1fr);
+  grid-template-columns: auto;
+  grid-template-areas: "top"
+    "bottom";
+  color: #ffd0a8;
+
+}
+
+.container-fluid {
+  grid-area: top;
+  background-color: #0d6C75;
+  border-bottom: 2px solid #16a7ac;
+  font-family: "Belleza", sans-serif;
+  font-style: italic;
+  padding: 5px;
+
+}
+
+.container-fluid>ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: flex-start;
+  /* vertical align */
+  justify-content: space-around;
+  /* horizontal align */
+  padding-top: 7px;
+
+}
+
+.container-fluid>ul>li {
+  align-self: center;
+
+}
+
+.container-fluid>ul>li>h1 {
+  color: #f8cf40;
+  font-weight: bold;
+
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  grid-area: bottom;
+  background-color: #B8a48F;
+  color: #544541;
+  align-items: left;
+  justify-content: top;
+  width: 100%;
+  height: fit-content;
+}
+
+header {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+h2 {
+  display: inline-block;
+  width: 80%;
+  text-align: left;
+  font-family: "Belleza", sans-serif;
+  font-weight: bolder;
+  font-size: 1.9em;
+  padding-left: 100px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+img {
+  display: inline-block;
+  width: 60%;
+  vertical-align: middle;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+p {
+  display: inline-block;
+  text-align: left;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-bottom: 50px;
+
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #544541;
+  color: #ffd0a8;
+  font-size: 0.8em;
+  padding-left: 20px;
+  padding-right: 50px;
+
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer-social-icons {
+  display: flex;
+  line-height: 20px;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+h4 {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+
+}
+
+.social-icon {
+  color: #ffd0a8;
+  height: fit-content;
+}
+
+ul {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.social-icons li {
+  vertical-align: top;
+  display: inline;
+  height: 100px;
+}
+
+.social-icons a {
+  color: #ffd0a8;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #544541;
+}
+
+.fa-facebook:hover {
+  background-color: #3d5b99;
+}
+
+.fa-instagram {
+  padding: 10px 12px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #544541;
+}
+
+.fa-instagram:hover {
+  background-color: #cc3ff0;
+}
+
+.fa-rss {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #544541;
+}
+
+.fa-rss:hover {
+  background-color: #eb8231;
+}
+
+.fa-youtube {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #544541;
+}
+
+.fa-youtube:hover {
+  background-color: #e64a41;
+}
+
+.fa-linkedin {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #544541;
+}
+
+.fa-linkedin:hover {
+  background-color: #0073a4;
+}
+
+.fa-github {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #544541;
+}
+
+.fa-github:hover {
+  background-color: #5a32a3;
+}
+
+
+@media(max-width:600px) {
+  .container {
+    display: grid;
+    width: 100%;
+    height: max-content;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: minmax(100px, 100%);
+    grid-template-areas: "sd main";
+    align-content: left;
+    font-size: 0.8em;
+    border: 1px solid #0d6C75;
+    position: relative;
+  }
+
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    grid-area: sd;
+    justify-content: left;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .container-fluid>ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: left;
+    font-size: 80%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .container-fluid>ul>li {
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    justify-content: left;
+    padding: 0;
+    margin: 0;
+
+  }
+
+  .container2 {
+    display: grid;
+    grid-area: main;
+    grid-template-rows: auto;
+    height: fit-content;
+    width: 100%;
+    position: relative;
+
+  }
+
+  h2 {
+    padding-top: 25px;
+    padding-left: 30px;
+    margin-left: 0;
+  }
+
+  img {
+    display: inline-block;
+    width: 80%;
+
+  }
+
+  p {
+    display: block;
+    padding-left: 30px;
+    padding-bottom: 100px;
+
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: bottom;
+    align-items: stretch;
+    size: fit-content;
+    background-color: #544541;
+    color: #ffd0a8;
+    font-size: 0.8em;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+    position: absolute;
+    bottom: 0;
+
+  }
+
+}
